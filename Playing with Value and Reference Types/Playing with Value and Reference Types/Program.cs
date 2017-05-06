@@ -8,9 +8,20 @@ namespace Playing_with_Value_and_Reference_Types
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            JadenCase.ToJadenCase("A string");
+        }
+
+    }
+
+    public static class JadenCase
+    {
+        public static string ToJadenCase(this string phrase)
+        {
+            Console.WriteLine(phrase);
+            Console.ReadKey();
+            return null;
         }
     }
 }
